@@ -42,6 +42,7 @@ textarea{
 }
 a{
 	text-decoration: none;
+	color: #fff;
 }
 
 *{
@@ -107,9 +108,11 @@ section.container{
 }
 .btn-light{
 	transition: all 0.5s;
+	color: #fff;
+    border-width: 2px;
 }
 .btn-light:hover{
-	color: #fff;
+	color: #209092;
 	border-color: currentColor;
 }
 
@@ -143,14 +146,21 @@ nav ul li{
 nav ul li a{
 	text-decoration: none;
 	color: #fff;
+	transition: all 0.5s;
 }
 
 nav ul li a:hover{
-	color: #cdcdcd;
+	color: pink;
 }
 
-nav ul li a:active{
-	color: pink;
+nav ul li a:focus{
+	color: #209092;
+	/*content: '';
+    height: 3px;
+    width: 50px;
+    color: #fff;
+    position: absolute;
+    background: #fff;*/
 }
 
 /**************************
@@ -162,8 +172,8 @@ nav ul li a:active{
 	height: 100vh;
 	background:#cdcdcd url(../img/banner/cookie-wallpaper.jpg) top left no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 	color: #fff;
-	/*Center*/
 	position: relative;
 }
 #home:before{
@@ -184,7 +194,9 @@ nav ul li a:active{
 	transform: translate(-50%,-50%);
 	text-align: center;
 }
-
+.tagline span{
+	color: #209092;
+}
 #home .tagline a{
 	margin-top: 60px;
 }
@@ -235,6 +247,7 @@ nav ul li a:active{
 	float:left;
 	padding: 10px;
 	position: relative;
+	border:2px solid;
 }
 #gallery figure img{
 	width: 100%;
@@ -245,8 +258,8 @@ figure figcaption{
 	/*transition: all 10s;*/
 }
 figure img:hover{
-	/*transform: rotateY(180deg);*/
-	/*-webkit-backface-visibility: hidden;
+	/*transform: rotateY(180deg);
+	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;*/
 }
 figure img:hover ~ figcaption{
