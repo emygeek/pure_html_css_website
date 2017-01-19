@@ -1,0 +1,342 @@
+/* Reset Styles */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, a, figure, small{
+	padding:0;
+	margin:0;
+	border:0;
+	font-size: 100%;
+	font:inherit;
+}
+input, label{
+	display: block;
+	font:inherit;
+	font-weight: normal;
+}
+input[type=text]{
+	border: 2px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 8px;
+}
+input[type=submit]{
+	width: 100%;
+    height: 40px;
+    background: #cdcdcd;
+    border: 1px solid rgb(217, 206, 206);
+    box-shadow: 1px 5px 5px #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.32);
+}
+textarea{
+	border: 2px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    height: 100px;
+    font: inherit;
+}
+a{
+	text-decoration: none;
+}
+
+*{
+	box-sizing: border-box;
+}
+/****************************
+	General styles 
+*****************************/
+
+body{
+	font-size:16px;
+	font-family:'Montserrat', sans-serif;
+	line-height:2;
+}
+
+h1, h2, h3{
+	margin-bottom: 20px;
+}
+h1{
+	font-size: 60px;
+	font-weight: 600;
+}
+h2{
+	font-size: 35px;
+	font-weight: 500;
+}
+h2.title{
+
+}
+.lobster{
+	font-family: Lobster, 'Montserrat', sans-serif;
+}
+.lg{
+	font-size: larger;
+}
+
+section.page{
+	padding: 150px 0px;
+    overflow: auto;
+}
+.section-desc{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+
+
+
+/*************************
+	Buttons
+*************************/
+.btn{
+	padding: 6px 12px;
+	border: 1px solid;
+	width: 150px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.btn-light{
+	transition: all 0.5s;
+}
+.btn-light:hover{
+	color: #fff;
+	border-color: currentColor;
+}
+
+
+
+
+
+/*************************
+	NavBar
+*************************/
+nav{
+	position: fixed;
+	z-index: 4000;
+	width: 100%;
+}
+
+nav ul{
+	list-style-type: none;
+	text-align: center;
+	padding-top: 30px;
+    padding-bottom: 30px;
+    background: #191919;
+    
+}
+nav ul li{
+	display: inline;
+	margin-right: 20px;
+	text-transform: uppercase;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+nav ul li a:hover{
+	color: #cdcdcd;
+}
+
+nav ul li a:active{
+	color: pink;
+}
+
+/**************************
+	Home section
+***************************/
+
+
+#home{
+	height: 100vh;
+	background:#cdcdcd url(../img/banner/cookie-wallpaper.jpg) top left no-repeat;
+	background-size: cover;
+	color: #fff;
+	/*Center*/
+	position: relative;
+}
+#home:before{
+	content:'';
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.56)
+}
+
+#home .tagline{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+#home .tagline a{
+	margin-top: 60px;
+}
+
+
+
+
+/**********************
+	 About section 
+***********************/
+
+#about{
+	background: #f0f7f9;
+}
+#about .about-img{
+	width: 50%;
+	float: left;
+}
+#about .about-img img{
+	max-width: 100%;
+    width: 500px; 
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-shadow: 5px -4px 5px #ccc;
+    border-radius: 15px;
+}
+#about .about-desc{
+	width: 50%;
+	float: left;
+}
+#about .about-desc p{
+	padding: 20px 30px;
+}
+
+
+/**********************
+	Gallery section
+***********************/
+
+#gallery{
+	background:#0a3c3d;
+	color: #fff;
+	clear:both;
+}
+#gallery figure{
+	width: 25%;
+	float:left;
+}
+#gallery figure img{
+	width: 100%;
+	height: 300px;
+}
+
+
+/*************************
+	Recipe Section
+**************************/
+#recipe{
+
+}
+.content{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.content:before{
+	content:'';
+}
+article{
+	-webkit-column-count:2;  /* Chrome safari opera */
+	-moz-column-count:2; /* Firefox */
+	column-count: 2;
+	-webkit-column-rule: 2px solid #ccc;
+	-moz-column-rule: 2px solid #ccc;
+	column-rule: 2px solid #ccc;
+	-webkit-column-gap:30px;
+	-moz-column-gap:30px;
+	column-gap:30px;
+
+}
+
+
+/**************************
+	 Contact Section 
+**************************/
+
+#map{
+	background:#f0f7f9;
+}
+#map-area{
+	width: 100%;
+	height: 600px;
+	border-top: 10px solid #140d0d;
+	border-bottom: 10px solid #140d0d;
+}
+
+
+/**************************
+	 Contact Section 
+**************************/
+
+#contact{
+	background: #f0f7f9;
+}
+#contact .contact-form{
+	width: 25%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*************************
+	footer 
+**************************/
+
+footer{
+	padding:40px 0;
+	text-align: center;
+	background:#191919;
+	color: #ccc;
+}
+footer small i.fa{
+	color:red;
+	animation: beating-heart 1s infinite linear;
+}
+
+@keyframes beating-heart{
+	0%{
+		font-size: 14px;
+		opacity: 0.1;
+	}
+	/*50%{
+		font-size: 16px;
+	}*/
+	100%{
+		font-size: 16px;
+		opacity: 1;
+	}
+}
+
+
+
+
+ul.social{
+	list-style-type: none;
+}
+.social li{
+	display: inline;
+	margin-left: 10px;
+}
+
+.social i{
+	border: 1px solid;
+    border-radius: 50%;
+    padding: 5px;
+}
+.social i:hover{
+	transform: scale(1.2);
+}
