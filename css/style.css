@@ -337,6 +337,9 @@ section#contact:before {
     right: 0;
     bottom: 0;
 }
+#contact .section-desc, #contact .contact-form{
+	position: relative; /*Needed so that the text and form are not behind the overlay */
+}
 #contact .contact-form{
 	width: 25%;
 	margin-left: auto;
